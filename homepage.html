@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque Naturalys</title>
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header id="header">
+        
+        <div id="botao__adm">
+            <button id="editar">Editar Produto </button>
+            <button id="adicionar">+</button>
+        </div>
+        
+    </header>
+
+    <div>
+        <div class="search-bar-container">
+            <input type="text" id="search-bar" placeholder="Pesquisar produtos...">
+            <div class="shopping-cart">
+                <span id="cart-icon">&#x1F6D2; <!-- Ícone de carrinho --></span>
+                <span id="cart-count">0</span> <!-- Contador de itens no carrinho -->
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="product-card">
+            <div class="product-image">
+                <img class="product" src="assets/img/CALMAZEN.webp" alt="Nome do Produto"> <!-- Substitua pelo caminho da imagem -->
+                <div class="product-info">
+                    <h3>Calmazen </h3>
+                    <p>Nutrial</p>
+                    <p>Disponível: <span class="quantidade">20</span> </p> <!-- Substitua pela quantidade real disponível -->
+                    
+                </div>
+
+            </div>
+           
+            <div class="quantity-selector">
+                <button onclick="changeQuantity(-1, this)" class="botao__referencia">-</button>
+                <span class="quantity">0</span>
+                <button onclick="changeQuantity(1, this)" class="botao__referencia">+</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img class="product" src="assets/img/OLEO DE ABACATE CAPSULAS.webp" alt="Nome do Produto"> <!-- Substitua pelo caminho da imagem -->
+                <div class="product-info">
+                    <h3>Oleó de Abacate</h3>
+                    <p>Flora nativa do Brasil</p>
+                    <p>Disponível: <span class="quantidade">2</span> </p> <!-- Substitua pela quantidade real disponível -->
+                    
+                </div>
+
+            </div>
+           
+            <div class="quantity-selector">
+                <button onclick="changeQuantity(-1, this)" class="botao__referencia">-</button>
+                <span class="quantity">0</span>
+                <button onclick="changeQuantity(1, this)" class="botao__referencia">+</button>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

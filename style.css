@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url(styles/login.css);
+@import url(styles/homepage.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+:root {
+    --color-primary:#30AE24;
+    --color-secundary:#7b9972;
+    --body:#f1f1f1;
+    --card:#ffffff;
+    --Text-primary:#1a1b19;
+    --text-secundary:#a3af9e;
+
+    --tittle:'Montserrat', sans-serif;
+    --caption:'Roboto', sans-serif;
+    --text-number:'Open Sans', sans-serif;
+}
+
+body {
+    background: var(--body);
+    font-family: var(--caption);
+}
